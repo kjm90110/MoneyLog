@@ -1,0 +1,39 @@
+input {
+    width: 250px; /* 가로 넓게 */
+    height: 40px; /* 세로 줄여서 일반 폼 크기 */
+    font-size: 16px; /* 글자 크기 증가 */
+    padding: 5px 10px;
+}
+
+select {
+    width: 150px; /* 선택창도 넓게 */
+    height: 40px;
+    font-size: 16px;
+    padding: 5px;
+}
+
+form {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.fixedForm {
+    position: sticky;
+    /* top: 80px; */
+    left: 0;
+
+    width: 100vw; /* ⭐무조건 화면 가로폭 고정 */
+
+    z-index: 10;
+    background: white;
+    padding: 15px 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box; /* ⭐padding 포함 계산 */
+}

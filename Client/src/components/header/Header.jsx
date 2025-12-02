@@ -4,8 +4,13 @@ import styles from "./Header.module.css";
 export default function Header() {
     return (
         <>
-            <header>
-                <img className={styles.logo} src="/lightmode_money.png"></img>
+            <header className={styles.header}>
+                <img
+                    className={styles.logo}
+                    src="/darkmode_money.png"
+                    alt="logo"
+                />
+                <strong>MoneyLog</strong>
             </header>
         </>
     );
