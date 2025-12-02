@@ -5,6 +5,7 @@ import EditForm from "../spending/EditForm";
 import SpendingChart from "../spending/SpendingChart";
 import AddSpendingInput from "../regist_spending/AddSpendingInput";
 import styles from "./Dashboard.module.css";
+// 삭제 하기 확인 눌렀을 때 Spending list에서 안 보이긴 하는데 모달이  아래에 남아있는 문제 해결해야함!!!!
 
 export default function Dashboard() {
     const [spendings, setSpendings] = useState([]);

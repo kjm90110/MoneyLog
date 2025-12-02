@@ -3,8 +3,11 @@ header {
     align-items: center; /* 수직 가운데 정렬 */
     position: relative; /* 가운데 텍스트를 absolute로 중앙 정렬할 때 필요 */
     height: 60px; /* 필요에 따라 조절 */
-    padding: 0 20px; /* 양쪽 여백 */
+    padding: 0 20px;
+    width: 100%;
     background-color: #fff; /* 헤더 배경색 */
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .logo {

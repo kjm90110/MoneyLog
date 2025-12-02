@@ -5,6 +5,7 @@
     align-items: center;
     padding: 20px;
     padding-top: 100px;
+    margin-top: 30px;
     box-sizing: border-box;
     overflow-x: hidden;
 }
@@ -22,6 +23,8 @@
     overflow-x: hidden;
     margin: 20px auto 0;
     box-sizing: border-box;
+    position: relative;
+    z-index: 1;
 }
 
 /* 빈 상태 메시지 */
