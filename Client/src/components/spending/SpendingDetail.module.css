@@ -1,0 +1,121 @@
+.closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #999;
+    transition: color 0.2s;
+    padding: 4px;
+}
+
+.closeBtn:hover {
+    color: #333;
+}
+
+.detailContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.header h2 {
+    margin: 0;
+    color: #333;
+    font-size: 20px;
+    word-break: break-word;
+}
+
+.categoryBadge {
+    display: inline-block;
+    padding: 4px 12px;
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.infoSection {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.infoItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.infoItem label {
+    font-weight: 600;
+    color: #666;
+    font-size: 13px;
+    min-width: 60px;
+}
+
+.infoItem p {
+    margin: 0;
+    color: #333;
+    font-size: 14px;
+    text-align: right;
+}
+
+.amount {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1976d2;
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 8px;
+}
+
+.editBtn,
+.deleteBtn {
+    flex: 1;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.editBtn {
+    background-color: #333;
+    color: white;
+}
+
+.editBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+}
+
+.deleteBtn {
+    background-color: red;
+    color: white;
+}
+
+.deleteBtn:hover {
+    background-color: red;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(211, 47, 47, 0.3);
+}

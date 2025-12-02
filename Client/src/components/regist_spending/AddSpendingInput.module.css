@@ -3,6 +3,7 @@ input {
     height: 40px; /* 세로 줄여서 일반 폼 크기 */
     font-size: 16px; /* 글자 크기 증가 */
     padding: 5px 10px;
+    border-radius: 10px;
 }
 
 select {
@@ -10,12 +11,19 @@ select {
     height: 40px;
     font-size: 16px;
     padding: 5px;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px;
 }
 
 form {
     display: flex;
     gap: 8px;
     align-items: center;
+    border-radius: 10px;
 }
 
 .fixedForm {
@@ -23,7 +31,7 @@ form {
     /* top: 80px; */
     left: 0;
 
-    width: 100vw; /* ⭐무조건 화면 가로폭 고정 */
+    width: 100%;
 
     z-index: 10;
     background: white;
@@ -35,5 +43,5 @@ form {
     align-items: center;
 
     border-bottom: 1px solid #ddd;
-    box-sizing: border-box; /* ⭐padding 포함 계산 */
+    box-sizing: border-box;
 }

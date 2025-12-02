@@ -1,0 +1,104 @@
+.editForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+}
+
+.closeBtn {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #999;
+    transition: color 0.2s;
+    padding: 4px;
+}
+
+.closeBtn:hover {
+    color: #333;
+}
+
+.editForm h2 {
+    margin: 0 0 15px 0;
+    color: #333;
+    font-size: 18px;
+}
+
+.editForm label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-weight: 500;
+    color: #333;
+    font-size: 14px;
+}
+
+.editForm input {
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit;
+    transition: all 0.2s ease;
+}
+
+.editForm input:focus {
+    outline: none;
+    border-color: #4caf50;
+    box-shadow: 0 0 6px rgba(76, 175, 80, 0.2);
+}
+
+.editForm input::placeholder {
+    color: #ccc;
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.saveBtn,
+.cancelBtn {
+    flex: 1;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.saveBtn {
+    background-color: #333;
+    color: white;
+}
+
+.saveBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+}
+
+.saveBtn:active {
+    transform: translateY(0);
+}
+
+.cancelBtn {
+    background-color: #999;
+    color: white;
+}
+
+.cancelBtn:hover {
+    background-color: #777;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(153, 153, 153, 0.3);
+}
+
+.cancelBtn:active {
+    transform: translateY(0);
+}

@@ -1,0 +1,149 @@
+.chartContainer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.emptyContainer {
+    text-align: center;
+    padding: 40px 20px;
+    color: #999;
+    font-size: 16px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.header h2 {
+    margin: 0;
+    color: #333;
+    font-size: 24px;
+}
+
+.totalAmount {
+    font-size: 18px;
+    font-weight: 600;
+    color: #4caf50;
+    background: #f1f8f4;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.chartSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.pieChartWrapper,
+.barChartWrapper {
+    background: #fafafa;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #f0f0f0;
+}
+
+.pieChartWrapper h3,
+.barChartWrapper h3 {
+    margin: 0 0 15px 0;
+    color: #333;
+    font-size: 16px;
+}
+
+.detailsSection {
+    background: #fafafa;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #f0f0f0;
+}
+
+.detailsSection h3 {
+    margin: 0 0 15px 0;
+    color: #333;
+    font-size: 16px;
+}
+
+.detailsList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.detailItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    background: white;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    transition: all 0.2s ease;
+}
+
+.detailItem:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transform: translateX(2px);
+}
+
+.itemLeft {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.colorDot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.categoryName {
+    font-weight: 500;
+    color: #333;
+    font-size: 14px;
+}
+
+.itemRight {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.amount {
+    font-weight: 600;
+    color: #1976d2;
+    font-size: 14px;
+}
+
+.percentage {
+    color: #999;
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    .chartSection {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .chartContainer {
+        padding: 15px;
+    }
+}

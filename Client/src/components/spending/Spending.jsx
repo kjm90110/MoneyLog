@@ -1,13 +1,13 @@
 import React from "react";
 import styles from "./Spending.module.css";
 
-export default function Spending({ spending }) {
+export default function Spending({ spending, onClick }) {
     const { id, category, content, amount, createdAt } = spending;
 
     const date = new Date(createdAt).toLocaleDateString("ko-KR");
 
     return (
-        <div className={styles.card}>
+        <div className={styles.card} onClick={() => onClick(spending)}>
             <div className={styles.left}>
                 <span className={styles.category}>{category}</span>
                 <p className={styles.content}>{content}</p>

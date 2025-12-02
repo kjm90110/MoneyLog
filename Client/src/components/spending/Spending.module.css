@@ -1,0 +1,70 @@
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 14px 18px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    gap: 12px;
+    min-width: 0; /* 중요: 내용이 flex 아이템을 초과하지 않도록 */
+    box-sizing: border-box;
+}
+
+.card:hover {
+    background-color: #efefef;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 0; /* 중요: 텍스트 오버플로우 방지 */
+    overflow: hidden;
+}
+
+.category {
+    padding: 4px 10px;
+    border-radius: 6px;
+    background: #dfe6e9;
+    font-size: 12px;
+    display: inline-block;
+    width: fit-content;
+    white-space: nowrap;
+}
+
+.content {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    margin: 0;
+    word-break: break-word; /* 긴 텍스트 줄바꿈 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.date {
+    font-size: 12px;
+    color: #999;
+    margin: 0;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0; /* 오른쪽 영역 축소 방지 */
+}
+
+.amount {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+    white-space: nowrap;
+}
